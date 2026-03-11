@@ -129,8 +129,11 @@
           <span class="text-sky-400">Lest's</span> Learn Vocabularies
         </h2>
       <div id="level-Container" class="flex gap-5 flex-wrap justify-center">
-
       </div>
+    </section>
+
+    <section id="spinner" class="flex justify-center items-center py-10 hidden">
+      <span class="loading loading-bars loading-xl"></span>
     </section>
 
     <Section id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid grid-cols-3 gap-5 ">
@@ -139,6 +142,23 @@
       <h2 class="text-4xl">একটি Lesson Select করুন।</h2>
      </div>
     </Section>
+
+    <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+
+<dialog id="word-modal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="details-container" class="space-y-5">
+      
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
     <script src="./script/script.js"></script>
   </body>
