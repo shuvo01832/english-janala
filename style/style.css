@@ -8,3 +8,44 @@
     background-color: #422ad5;
     color: white;
 }
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.faq {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq h2 span {
+  color: #00aaff;
+}
+
+.faq-item {
+  background: #f5f5f5;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.faq-answer {
+  padding: 15px;
+  display: none;
+  color: #555;
+}

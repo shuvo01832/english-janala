@@ -28,7 +28,9 @@
       href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    
     <link rel="stylesheet" href="./style/style.css" />
+
   </head>
   <body>
     <header>
@@ -74,24 +76,24 @@
           </div>
           <a href="" class="flex items-center gap-1">
             <span class="text-lg font-bold">English</span>
-            <img src="./assets/logo.png" alt="" />
+            <img class="hover:animate-bounce" src="./assets/logo.png" alt="" />
             <span class="font-bangla text">জানালা</span>
           </a>
         </div>
-        <div class="navbar-end hidden lg:flex">
+        <div class="navbar-end hidden lg:flex ">
           <ul class="menu menu-horizontal px- space-x-4">
             <li>
-              <a href="" class="btn btn-outline btn-primary">
-                <i class="fa-solid fa-circle-question"></i>FAQ</a
+              <a href="" class="btn btn-outline btn-primary hover:animate-pulse hover:shadow-xl hover:-translate-y-1">
+                <i class="fa-solid fa-circle-question "></i>FAQ</a
               >
             </li>
             <li>
-              <a href="" class="btn btn-outline btn-primary">
+              <a href="" class="btn btn-outline btn-primary hover:shadow-xl hover:-translate-y-1">
                 <i class="fa-solid fa-book-open"></i>Learn</a
               >
             </li>
             <li>
-              <a href="" class="btn btn-outline btn-primary">
+              <a href="" class="btn btn-outline btn-primary hover:shadow-xl hover:-translate-y-1">
                 <i class="fa-solid fa-arrow-right-from-bracket"></i>logout</a
               >
             </li>
@@ -101,9 +103,9 @@
     </header>
     <section
       class="flex gap-5 justify-between items-center py-5 w-11/12 mx-auto">
-      <div class="contain flex-1">
+      <div class="contain flex-1 ">
         <h2 class="text-4xl font-bold mb-8">
-          <span class="text-sky-400">English</span> is Easy!!
+          <span class="text-sky-400 ">English</span> is Easy!!
         </h2>
         <p class="font-bangla">
           আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
@@ -111,14 +113,18 @@
           আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br />
           যাবে অন্য একটি Level এ
         </p>
-        <form class="mt-8">
-            <input type="text" name="" placeholder="Enter Your Name" id="" class="rounded-sm py-2 pl-2">
+        <form class="mt-8 ">
+            <input type="text" name="" placeholder="Enter Your Name" id="" class="rounded-sm py-2 pl-2 focus:outline-none 
+          focus:ring-2 focus:ring-blue-400 
+            focus:scale-105">
             <br> <br>
-            <input type="password" name="password" placeholder="" id="" class="rounded-sm py-2 pl-2">
+            <input type="password" name="password" placeholder="" id="" class="rounded-sm py-2 pl-2 focus:outline-none 
+              focus:ring-2 focus:ring-blue-400 
+              focus:scale-105">
         </form>
-        <button class="btn btn-outline text-white bg-[#422AD5] mt-4">Get Started</button>
+        <button class="btn btn-outline text-white bg-[#422AD5] mt-4 hover:text-red-300 hover:bg-blue-700 hover:scale-105 shadow-md hover:shadow-xl">Get Started</button>
       </div>
-      <div class="image flex-1">
+      <div class="image flex-1 hover:scale-105 hover:rotate-1 transition duration-300 ">
         <img src="./assets/hero-student.png" alt="" />
       </div>
     </section>
@@ -170,6 +176,92 @@
     </div>
   </div>
 </dialog>
+
+<section class="faq">
+  <h2><span>Frequently</span> Asked Questions</h2>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      1. How can I start learning English on this website?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      You can start by exploring our beginner lessons, interactive exercises, and quizzes.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      2. Is this website free to use?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      Yes, it's completely free for beginners.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      3. Do I need to create an account?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      No, you can explore basic lessons without an account.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      4. How can I build my English vocabulary?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      Practice daily with lessons, quizzes, and reading exercises.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      5. Do you offer certificates?
+      <span>+</span>
+    </div>
+    <div class="faq-answer">
+      Yes, certificates are available after completing courses.
+    </div>
+  </div>
+
+</section>
+
+<footer class="bg-slate-200 px-10 md:px-20 py-10 mt-20">
+  <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+    
+    <!-- Left Side -->
+    <div class="text-center md:text-left">
+      <div class="flex items-center">
+        <span class="text-lg font-semibold">
+        English </span>
+        <img src="./assets/logo.png" alt="">
+        <span>জানালা</span>
+      </div>
+      <p class="mt-2 text-gray-700">ইংরেজি শিখুন সহজে</p>
+      <p class="text-sm text-gray-500">
+        Providing ED-Tech Applications since 2025
+      </p>
+    </div>
+
+    <!-- Right Side -->
+    <div class="text-center ">
+      <p class="text-xs text-gray-600 mb-2">FOLLOW US</p>
+      <div class="flex justify-center  gap-1 text-lg text-gray-700">
+        <i class="fa-brands fa-facebook  "></i>
+        <i class="fa-brands fa-youtube"></i>
+       <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-github"></i>
+        
+      </div>
+    </div>
+  </div>
+</footer>
 
     <script src="./script/script.js"></script>
   </body>

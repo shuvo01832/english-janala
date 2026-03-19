@@ -152,3 +152,21 @@ fetch("https://openapi.programming-hero.com/api/words/all")
 });
 
 });
+
+
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach((q) => {
+  q.addEventListener("click", () => {
+    const answer = q.nextElementSibling;
+
+    // toggle current
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+      q.querySelector("span").textContent = "+";
+    } else {
+      answer.style.display = "block";
+      q.querySelector("span").textContent = "-";
+    }
+  });
+});
